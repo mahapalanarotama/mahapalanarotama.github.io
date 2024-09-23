@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav> <!-- Bagian Navbar -->
+        <ul>
+            <div class="logo"><img src="Img/logo web mpn.png" alt="logo"></div>
+            <li><a href="./Homepage.html">Home</a></li>
+            <li><a href="./News.html">News</a></li>
+            <li><a href="./Product.html">Product</a></li>
+            <li><a href="./Learning.html" class="active">Learning</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="./Sign.html"><div class="sign">Sign in</div></a>
+        </ul>
+    </nav>
+
+    <header>    <!-- Bagian Header -->
+        <div class="top-page">
+            <h1>MAHAPALA</h1>
+            <h2>NAR <img src="Img/Logo Mpn.png" alt=""> TAMA</h2>
+        </div>
+    </header>
+
+    <section>   <!-- Bagian Isi Halaman -->
+        
+    </section>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            // Hanya terapkan scroll smooth jika href diawali dengan '#' (untuk navigasi dalam halaman)
+            if (anchor.getAttribute('href').startsWith('#')) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+<footer class="footer" id="contact">
+    <div class="backgroud">
+        <ol> Pages
+            <li><a href="">Home</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Learning</a></li>
+            <li><a href="">Information</a></li>
+        </ol>
+    </div>
+    <div>
+        <ol> Divisi
+            <li><a href="">Mountaineering</a></li>
+            <li><a href="">Rock Climbing</a></li>
+            <li><a href="">Rafting</a></li>
+            <li><a href="">Caving</a></li>
+            <li><a href="">Diving</a></li>
+            <li><a href="">Conservation</a></li>
+        </ol>
+    </div>
+    <p>© 2024 fairus fawas. All rights reserved.</p>
+    <div class="logo2"><img src="Img/logo web mpn.png" alt="">
+    </div> 
+    <!-- <div class="sosmed">
+        <img src="Img/Ig.svg" alt="">
+        <img src="Img/yt.svg" alt="">
+        <img src="Img/Tt.svg" alt=""> -->
+    </div>
+</footer>
+</html>

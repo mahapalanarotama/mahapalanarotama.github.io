@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html id="sign">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="stylesign.css" />
+    </head>
+    <body>
+        <div class="template-sign-in">
+            <div class="div">
+                <div class="div-left-section">
+                    <div class="overlap-group">
+                        <div class="side-left"></div>
+                        
+                        <header class="header">
+                            <div class="partnership-for">Join the Adventure with Mahapala</div>
+                            <p class="lorem-ipsum-dolor">
+                                Selamat datang di Mahapala! Masuk untuk bergabung dengan komunitas pecinta alam yang berdedikasi untuk melestarikan lingkungan dan mengeksplorasi keindahan alam. Bersama kita ciptakan pengalaman luar ruangan yang tak terlupakan.
+                            </p>
+                        </header>
+                        <img class="foxhub-logo" src="Img/image.png" />
+                    </div>
+                </div>
+                <div class="btn-text"><a href="./Homepage.html">
+                    <div class="text-wrapper">Return Home</div>
+                    <img class="chevron-left" src="img/chevron-left.svg" />
+                </a></div>
+                <div class="btn-text-2">
+                    <div class="text-wrapper-2">Need help?</div>
+                    <img class="info" src="img/info.svg" />
+                </div>
+                <p class="copyright">Copyright 2021 - 2022 FoxHub Inc. All rights Reserved</p>
+                <p class="not-a-member-yet">
+                    <span class="span">Not a member yet?</span> <span class="text-wrapper-3"> JOIN NOW</span>
+                </p>
+                <div class="heading">
+                    <div class="text-wrapper-4">WELCOME BACK EXCLUSIVE MEMBER</div>
+                    <div class="text-wrapper-5">LOG IN TO CONTINUE</div>
+                </div>
+                <form class="form">
+                    <div class="overlap-group-wrapper">
+                        <input type="email" placeholder="example@email.com" class="email" name="" id=""> <img class="img" src="img/icon-mail.svg" />
+                    </div>
+                    <div class="input-password">
+                        <input type="password" placeholder="***********" class="overlap" name="" id="myInput"> <input type="button" value="SHOW" class="show" onclick="myFunction()"> <img class="img2" src="img/lock.svg" />
+                        
+                    </div>
+                    <div class="overlap-group-wrapper">
+                        <input type="submit" placeholder="Proceed to my Account" value="" class="overlap-2">
+                        <div class="text-wrapper-9">Proceed to my Account</div>
+                            <img class="ex-icon-arrow-right" src="img/arrow-right.svg" />
+                        <!-- <div class="overlap-2">
+                            
+                            <div class="text-wrapper-9">Proceed to my Account</div>
+                            <img class="ex-icon-arrow-right" src="img/arrow-right.svg" />
+                        </div> -->
+                    </div>
+                </form>
+                <p class="having-password">Having Issues with your Password?</p>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+    </body>
+</html>
